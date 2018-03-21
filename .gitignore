@@ -7,3 +7,5 @@ secrets.json
 dist/*
 preview/css
 src/css/*.css
+plane_templates/adaptive_waves/assets
+.idea
