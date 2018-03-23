@@ -422,6 +422,36 @@ Sizes: [
 
     }
 
+    /* CONDITIONS FOR SMALL DEVICES ONLY
+    =======================================================*/
+    @media (max-width: 480px) {
+      table[class="flexibleContainerBoxNext"] {
+        width: 80% !important;
+        padding-left: 20% !important;
+        background: #ffffff !important;
+      }
+      table {
+        table-layout: auto !important;
+      }
+      table, tbody, tr, td {
+        background: #ffffff !important;
+        background-image: none !important;
+      }
+      h1 {
+        display: block !important;
+        width: 100% !important;
+        font-size: 37px !important;
+      }
+      a[class="menu-link"] {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      img[class="logo"] {
+        padding-left: 30px;
+      }
+    }
+
     /* end IOS targeting */
   </style>
   <!--
@@ -539,17 +569,18 @@ Sizes: [
                                                   width="214"
                                                   height="44"
                                                   alt="Eapteka.ru"
-                                                  style="display: block;border-width:0;"/></a>
+                                                  style="display: block;border-width:0;"
+                                                  class="logo"/></a>
                                             </td>
                                             <td align="right"
                                                 style="padding-top:-5px;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;">
                                               <a href="http://www.eapteka.ru/goods/drugs/?utm_source=regular&utm_medium=email&utm_content=drugs&utm_campaign=2018_03_sixgoods"
-                                                 style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;">Каталог
+                                                 style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;" class="menu-link">Каталог
                                                 товаров</a>
                                               <a href="http://www.eapteka.ru/company/stock/?utm_source=regular&utm_medium=email&utm_content=stock&utm_campaign=2018_03_sixgoods"
-                                                 style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;">Акции</a>
+                                                 style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;" class="menu-link">Акции</a>
                                               <a href="http://www.eapteka.ru/personal/profile/?utm_source=regular&utm_medium=email&utm_content=profile&utm_campaign=2018_03_sixgoods"
-                                                 style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;text-decoration: none;">Веб-версия</a>
+                                                 style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;text-decoration: none;" class="menu-link">Веб-версия</a>
                                             </td>
                                           </tr>
                                           <tr>
@@ -656,11 +687,10 @@ Sizes: [
           <!-- //MODULE ROW -->
 
 
-          <tbody style="background: url('https://res.cloudinary.com/dwy6xkazs/image/upload/v1521625566/bg_01_0000.jpg') 0 100% no-repeat;">
-          <tr>
+          <tr style="background: url('https://237528.selcdn.ru/eapteka.ru/20180323/bg_00.jpg') 0 100% no-repeat;">
             <!-- SUBTITLE -->
-            <td align="left" valign="top" style="padding-left: 30px; padding-right: 30px; background: transparent;">
-              <div style="text-align:left;font-weight:normal;font-family:Arial,sans-serif;font-size:20pt;font-size:23px;margin-bottom:10px;margin-right:193px;color:#5c5c5c;line-height:120%;background-image: none;">
+            <td align="left" valign="top" style="padding-left: 30px; padding-right: 35%; background: transparent;">
+              <div style="text-align:left;font-weight:normal;font-family:Arial,sans-serif;font-size:20pt;font-size:23px;margin-bottom:10px;color:#5c5c5c;line-height:120%;background-image: none;padding-bottom: 30px;">
                 Anchovy essence soup is just not the same without basil leafs.
               </div>
             </td>
@@ -669,7 +699,7 @@ Sizes: [
 
           <!-- MODULE ROW // -->
           <!-- Perfetta -->
-          <tr>
+          <tr style="background: url('https://237528.selcdn.ru/eapteka.ru/20180323/bg_01.jpg') 0 100% no-repeat;">
             <td align="center" valign="top" style="background: transparent;">
               <!-- CENTERING TABLE // -->
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -678,7 +708,7 @@ Sizes: [
                     <!-- FLEXIBLE CONTAINER // -->
                     <table border="0" cellpadding="30" cellspacing="0" width="540" class="flexibleContainer">
                       <tr>
-                        <td valign="top" width="540" class="flexibleContainerCell" style="background: transparent;">
+                        <td valign="top" width="540" class="flexibleContainerCell" style="background: transparent;padding-top: 0;">
 
                           <!-- CONTENT TABLE // -->
                           <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -687,42 +717,45 @@ Sizes: [
                                 <table border="0" cellpadding="0" cellspacing="0" width="235" style="max-width:100%;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <img src="https://res.cloudinary.com/dwy6xkazs/image/upload/v1521626183/perfetta_logo.png"
+                                      <img src="https://237528.selcdn.ru/eapteka.ru/20180323/perfetta_logo.png"
                                            width="149"
                                            height="18"
                                            style="display: block;margin-bottom: 12px;"
                                            alt="Dieta Perfetta"/>
                                       <div color="#999999" style="font-size: 15px; margin-bottom: 15px; color: #999999;">Энергия и легкость</div>
-                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;">Диета Перфетта<br/>
+                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;font-size: 18px;">Диета Перфетта<br/>
                                         таблетки шипучие, 20шт.</div>
                                       <div
                                           style="text-align:left;font-family:Arial,sans-serif;font-size:14px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
-                                        <ul style="margin-left: 0; padding-left: 14px; line-height: 17px;">
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span>
-                                            <span>повышает работоспособность</span>
-                                          </li>
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span>
-                                            <span>уменьшает сонливость и усталость</span>
-                                          </li>
-                                        </ul>
+                                        <!--LIST-->
+                                        <table cellpadding="0" cellspacing="0" border="0" align="left" width="100%" style="width: 100%;margin-left: 0; line-height: 17px; margin-bottom: 11px;color: #666666;">
+                                          <tr style="background: transparent;">
+                                            <td width="12"
+                                                style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                              <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                            </td>
+                                            <td width="auto"
+                                                style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">Чувство насыщения до 4 часов
+                                            </td>
+                                          </tr>
+                                          <tr style="background: transparent;">
+                                            <td width="12"
+                                                style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                              <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                            </td>
+                                            <td width="auto"
+                                                style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">
+                                              Сохранение привычного<br/>рациона питания
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!--LIST END-->
                                       </div>
-                                      <a href="https://www.eapteka.ru/"
-                                         style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px; margin-bottom: 20px;">Купить
-                                        за 790 руб.</a>
+                                      <div style="clear: both;">
+                                        <a href="https://www.eapteka.ru/"
+                                           style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px; margin-bottom: 20px;font-size: 16px;">Купить
+                                          за 790 руб.</a>
+                                      </div>
                                     </td>
                                   </tr>
                                 </table>
@@ -733,12 +766,15 @@ Sizes: [
                                        width="232" style="max-width:100%;background: transparent;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <img
-                                          src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521622097/perfetta.png"
-                                          width="232"
-                                          height="300"
-                                          class="flexibleImage"
-                                          style="display:block;max-width:100%; margin-top: -33px;" alt="Dieta Perfetta - внешний вид товара" title="Dieta Perfetta"/>
+                                      <a href="https://eapteka.ru" style="display: block;" title="Dieta Perfetta">
+                                        <img
+                                            src="https://237528.selcdn.ru/eapteka.ru/20180323/perfetta.png"
+                                            width="232"
+                                            height="287"
+                                            class="flexibleImage"
+                                            style="display:block;max-width:100%;height: 287px;"
+                                            alt="Dieta Perfetta - внешний вид товара"/>
+                                      </a>
                                     </td>
                                   </tr>
                                 </table>
@@ -758,12 +794,11 @@ Sizes: [
             </td>
           </tr>
           <!-- // MODULE ROW -->
-          </tbody>
 
           <!-- Porciola -->
           <!-- MODULE ROW // -->
           <tr>
-            <td align="center" valign="top" style="background: url('https://res.cloudinary.com/dwy6xkazs/image/upload/v1521622097/bg_02.jpg') 0 0 no-repeat, url('https://res.cloudinary.com/dwy6xkazs/image/upload/v1521638729/bg_03.jpg') 0 100% no-repeat;">
+            <td align="center" valign="top" style="background: url('https://237528.selcdn.ru/eapteka.ru/20180323/bg_02.jpg') 0 0 no-repeat, url('https://237528.selcdn.ru/eapteka.ru/20180323/bg_03.jpg') 0 100% no-repeat;">
               <!-- CENTERING TABLE // -->
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
@@ -771,7 +806,7 @@ Sizes: [
                     <!-- FLEXIBLE CONTAINER // -->
                     <table border="0" cellpadding="30" cellspacing="0" width="540" class="flexibleContainer">
                       <tr>
-                        <td valign="top" width="540" class="flexibleContainerCell" style="padding-top: 40px; padding-bottom: 0;background: transparent;">
+                        <td valign="top" width="540" class="flexibleContainerCell" style="padding-top: 40px; padding-bottom: 0; padding-left: 8px; background: transparent;">
 
                           <!-- CONTENT TABLE // -->
                           <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -780,13 +815,14 @@ Sizes: [
                                 <table border="0" cellpadding="0" cellspacing="0" width="232" style="max-width:100%;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <img src="https://res.cloudinary.com/dwy6xkazs/image/upload/v1521622097/porciolla.png"
-                                           width="235"
-                                           height="324"
-                                           class="flexibleImage"
-                                           style="display:block;max-width:100%;margin-left:-22px;"
-                                           alt="Порциола - внешний вид товара"
-                                           title="Порциола"/>
+                                      <a href="https://eapteka.ru" style="display: block;" title="Порциола">
+                                        <img src="https://237528.selcdn.ru/eapteka.ru/20180323/porciolla.png"
+                                             width="235"
+                                             height="324"
+                                             class="flexibleImage"
+                                             style="display:block;max-width:100%;"
+                                             alt="Порциола - внешний вид товара"/>
+                                      </a>
                                     </td>
                                   </tr>
                                 </table>
@@ -797,40 +833,44 @@ Sizes: [
                                        width="232" style="max-width:100%;background: transparent;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <!-- TODO: porciola -->
-                                      <img src="https://res.cloudinary.com/dwy6xkazs/image/upload/v1521626183/porciolla_logo.png"
+                                      <img src="https://237528.selcdn.ru/eapteka.ru/20180323/porciolla_logo.png"
                                            width="110"
                                            height="30"
                                            style="display:block;margin-bottom: 12px; padding-top: 50px;"
                                            alt="Порциола"/>
                                       <div color="#999999" style="font-size: 15px; margin-bottom: 15px; color: #999999;">Гидрогель, заполняющий  желудок</div>
-                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;">Порциола капсулы, 60 шт.</div>
+                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;font-size: 18px;">Порциола капсулы, 60 шт.</div>
                                       <div
                                           style="text-align:left;font-family:Arial,sans-serif;font-size:14px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
-                                        <ul style="margin-left: 0; padding-left: 14px; line-height: 17px;">
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span> <span>Чувство насыщения до 4 часов</span>
-                                          </li>
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span> <span>Сохранение привычного<br/>рациона питания</span>
-                                          </li>
-                                        </ul>
+                                        <!--LIST-->
+                                        <table cellpadding="0" cellspacing="0" border="0" align="left" width="100%" style="width: 100%;margin-left: 0; line-height: 17px; margin-bottom: 11px;color: #666666;">
+                                          <tr style="background: transparent;">
+                                            <td width="12"
+                                                style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                              <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                            </td>
+                                            <td width="auto"
+                                                style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">Чувство насыщения до 4 часов
+                                            </td>
+                                          </tr>
+                                          <tr style="background: transparent;">
+                                            <td width="12"
+                                                style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                              <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                            </td>
+                                            <td width="auto"
+                                                style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">
+                                              Сохранение привычного<br/>рациона питания
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!--LIST END-->
                                       </div>
-                                      <a href="#https://www.eapteka.ru/"
-                                         style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;">Купить
-                                        за 790 руб.</a>
+                                      <div style="clear: both;">
+                                        <a href="#https://www.eapteka.ru/"
+                                           style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;font-size: 16px;">Купить
+                                          за 790 руб.</a>
+                                      </div>
                                     </td>
                                   </tr>
                                 </table>
@@ -858,7 +898,7 @@ Sizes: [
               <!-- CENTERING TABLE // -->
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" style="background: url('https://res.cloudinary.com/dwy6xkazs/image/upload/v1521638729/bg_04.jpg') 0 0 no-repeat, url('https://res.cloudinary.com/dwy6xkazs/image/upload/v1521719457/gradient.jpg') 0 100% no-repeat; padding: 0;">
+                  <td align="center" valign="top" style="background: url('https://237528.selcdn.ru/eapteka.ru/20180323/bg_04.jpg') 0 0 no-repeat, url('https://237528.selcdn.ru/eapteka.ru/20180323/gradient.jpg') 0 100% no-repeat; padding: 0;">
                     <!-- FLEXIBLE CONTAINER // -->
                     <table border="0" cellpadding="30" cellspacing="0" width="540" class="flexibleContainer" style="background: transparent;">
                       <tr>
@@ -871,42 +911,44 @@ Sizes: [
                                 <table border="0" cellpadding="0" cellspacing="0" width="232" style="max-width:100%;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <!-- TODO: reduxin -->
-                                      <img src="https://res.cloudinary.com/dwy6xkazs/image/upload/v1521626183/reduxin_logo.png"
+                                      <img src="https://237528.selcdn.ru/eapteka.ru/20180323/reduxin_logo.png"
                                            width="90"
                                            height="38"
                                            style="display:block;margin-bottom:12px;margin-top:31px;"
                                            alt="Редуксин Лайт"/>
                                       <div color="#999999" style="font-size: 15px; margin-bottom: 15px; color: #999999;">Жиросжигание</div>
-                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;">Редуксин-Лайт<br/>Усиленная формула,<br/>капсулы, 60 шт.</div>
+                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;font-size: 18px;">Редуксин-Лайт<br/>Усиленная формула,<br/>капсулы, 60 шт.</div>
                                       <div
                                           style="text-align:left;font-family:Arial,sans-serif;font-size:14px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
-                                        <ul style="margin-left: 0; padding-left: 14px; line-height: 17px;">
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span>
-                                            <span>повышает работоспособность</span>
-                                          </li>
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span>
-                                            <span>уменьшает сонливость и усталость</span>
-                                          </li>
-                                        </ul>
                                       </div>
-                                      <a href="https://www.eapteka.ru/"
-                                         style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;">Купить
-                                        за 790 руб.</a>
+                                      <!--LIST-->
+                                      <table cellpadding="0" cellspacing="0" border="0" align="left" width="100%" style="width: 100%;margin-left: 0; line-height: 17px; margin-bottom: 11px;color: #666666;">
+                                        <tr style="background: transparent;">
+                                          <td width="12"
+                                              style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                            <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                          </td>
+                                          <td width="auto"
+                                              style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">повышает работоспособность
+                                          </td>
+                                        </tr>
+                                        <tr style="background: transparent;">
+                                          <td width="12"
+                                              style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                            <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                          </td>
+                                          <td width="auto"
+                                              style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">
+                                            уменьшает усталость<br/>и сонливость
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <!--LIST END-->
+                                      <div style="clear: both;">
+                                        <a href="https://www.eapteka.ru/"
+                                           style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;font-size: 16px;">Купить
+                                          за 790 руб.</a>
+                                      </div>
                                     </td>
                                   </tr>
                                 </table>
@@ -917,12 +959,14 @@ Sizes: [
                                        width="232" style="max-width:100%;background: transparent;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <img src="https://res.cloudinary.com/dwy6xkazs/image/upload/v1521622097/reduxin.png"
-                                           width="239"
-                                           height="290"
-                                           class="flexibleImage"
-                                           style="display:block;max-width:100%;margin-left: -7px;"
-                                           alt="Редуксин Лайт - внешний вид товара" title="Редуксин Лайт"/>
+                                      <a href="https://eapteka.ru" style="display: block;" title="Редуксин Лайт">
+                                        <img src="https://237528.selcdn.ru/eapteka.ru/20180323/reduxin.png"
+                                             width="239"
+                                             height="290"
+                                             class="flexibleImage"
+                                             style="display:block;max-width:100%;margin-left: -7px;"
+                                             alt="Редуксин Лайт - внешний вид товара"/>
+                                      </a>
                                     </td>
                                   </tr>
                                 </table>
@@ -946,7 +990,7 @@ Sizes: [
 
           <!-- MODULE ROW // -->
           <tr>
-            <td align="center" valign="top" style="background: url('https://res.cloudinary.com/dwy6xkazs/image/upload/v1521622096/bg_05.jpg') 0 100% no-repeat;">
+            <td align="center" valign="top" style="background: url('https://237528.selcdn.ru/eapteka.ru/20180323/bg_05.jpg') 0 100% no-repeat;">
               <!-- CENTERING TABLE // -->
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
@@ -954,7 +998,7 @@ Sizes: [
                     <!-- FLEXIBLE CONTAINER // -->
                     <table border="0" cellpadding="30" cellspacing="0" width="540" class="flexibleContainer">
                       <tr>
-                        <td valign="top" width="540" class="flexibleContainerCell" style="padding-top: 0;background: transparent;">
+                        <td valign="top" width="540" class="flexibleContainerCell" style="padding-top: 0;padding-left: 0;padding-bottom: 0;background: transparent;">
 
                           <!-- CONTENT TABLE // -->
                           <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -962,13 +1006,15 @@ Sizes: [
                               <td align="left" valign="top" class="flexibleContainerBox" style="background: transparent;">
                                 <table border="0" cellpadding="0" cellspacing="0" width="232" style="max-width:100%;">
                                   <tr>
-                                    <td align="left" class="textContent" style="background: transparent;">
-                                      <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/c_scale,w_245/v1521622097/modelform.png"
-                                           width="245"
-                                           height="312"
-                                           class="flexibleImage"
-                                           style="display:block;margin-left:-30px;margin-bottom: -32px;"
-                                           alt="Modelform - внешний вид товара" title="Text"/>
+                                    <td align="left" class="textContent" style="background: transparent;vertical-align: bottom;">
+                                      <a href="https://eapteka.ru" style="display: block;"  title="Modelform">
+                                        <img src="https://237528.selcdn.ru/eapteka.ru/20180323/modelform.png"
+                                             width="245"
+                                             height="312"
+                                             class="flexibleImage"
+                                             style="display:block;"
+                                             alt="Modelform - внешний вид товара"/>
+                                      </a>
                                     </td>
                                   </tr>
                                 </table>
@@ -980,42 +1026,43 @@ Sizes: [
                                        style="max-width:100%;background:transparent;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <!-- TODO: modelform -->
-                                      <img src="https://res.cloudinary.com/dwy6xkazs/image/upload/v1521626183/modelform_logo.png"
+                                      <img src="https://237528.selcdn.ru/eapteka.ru/20180323/modelform_logo.png"
                                            width="138"
                                            height="31"
-                                           style="display:block;margin-bottom:12px;margin-top:50px;"
+                                           style="display:block;margin-bottom:12px;margin-top:30px;"
                                            alt="Modelform"/>
                                       <div color="#999999" style="font-size: 15px; margin-bottom: 15px; color: #999999;">Уникальный состав ELEGREEN</div>
-                                      <div color="#666666" style="margin-bottom: 20px; color: #666666; line-height: 1.3;">Модельформ 30+,<br/>капсулы, 30 шт.</div>
+                                      <div color="#666666" style="margin-bottom: 14px; color: #666666; line-height: 1.3;font-size: 18px;">Модельформ 30+,<br/>капсулы, 30 шт.</div>
                                       <div
                                           style="text-align:left;font-family:Arial,sans-serif;font-size:14px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
-                                        <ul style="margin-left: 0; padding-left: 14px; line-height: 17px;">
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span>
-                                            <span>повышает работоспособность</span>
-                                          </li>
-                                          <li style="list-style: none;">
-                                            <span>
-                                              <img src="http://res.cloudinary.com/dwy6xkazs/image/upload/v1521711551/bul.png"
-                                                   style="display:inline-block;margin:0;padding:0;"
-                                                   width="7"
-                                                   height="7"
-                                                   alt="*"/>
-                                            </span>
-                                            <span>уменьшает усталость<br/>и сонливость</span>
-                                          </li>
-                                        </ul>
+                                        <!--LIST-->
+                                        <table cellpadding="0" cellspacing="0" border="0" align="left" width="100%" style="width: 100%;margin-left: 0; line-height: 17px; margin-bottom: 11px;">
+                                          <tr style="background: transparent;">
+                                            <td width="12"
+                                                style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                              <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                            </td>
+                                            <td width="auto"
+                                                style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">повышает работоспособность
+                                            </td>
+                                          </tr>
+                                          <tr style="background: transparent;">
+                                            <td width="12"
+                                                style="width:12px; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;" valign="top">
+                                              <img src="https://237528.selcdn.ru/eapteka.ru/20180323/bul.png" style="margin-top: 6px;" alt="●"/>
+                                            </td>
+                                            <td width="auto"
+                                                style="width:auto; height: auto; padding: 0; background: transparent;font-size: 15px;line-height: 20px;color: #666666;" valign="top">
+                                              уменьшает усталость<br/>и сонливость
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!--LIST END-->
                                       </div>
-                                      <a href="https://www.eapteka.ru/"
-                                         style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;">Купить
-                                        за 790 руб.</a>
+                                      <div style="clear: both;margin-bottom: 30px;">
+                                        <a href="https://www.eapteka.ru/"
+                                           style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;font-size: 16px;">Купить
+                                          за 790 руб.</a></div>
                                     </td>
                                   </tr>
                                 </table>
