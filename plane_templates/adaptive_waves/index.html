@@ -78,11 +78,6 @@ Sizes: [
       line-height: 100%;
     }
 
-    /*a {*/
-    /*text-decoration: none !important;*/
-    /*border-bottom: 1px solid;*/
-    /*}*/
-
     h1, h2, h3, h4, h5, h6 {
       color: #5F5F5F;
       font-weight: normal;
@@ -331,13 +326,13 @@ Sizes: [
       from rendering media query styles on
       desktop.
       */
-      /*td[class="textContent"], td[class="flexibleContainerCell"] { width: 100%; padding-left: 10px !important; padding-right: 10px !important; }*/
       table[id="emailHeader"],
       table[id="emailBody"],
       table[id="emailFooter"],
       table[class="flexibleContainer"],
       td[class="flexibleContainerCell"] {
         width: 100% !important;
+        max-width: 100% !important;
       }
 
       td[class="flexibleContainerBox"], td[class="flexibleContainerBox"] table {
@@ -424,11 +419,37 @@ Sizes: [
 
     /* CONDITIONS FOR SMALL DEVICES ONLY
     =======================================================*/
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
+      table[id=bodyTable],
+      table[id=emailHeader] {
+        max-width: 100%;
+      }
+      a[class="menuLink"] {
+        display: block !important;
+        width: 100% !important;
+      }
+      table[class="flexibleContainer"] {
+        max-width: 100%;
+        margin: 0;
+      }
+      td[class="textContent"] {
+        padding: 30px 10px 0 !important;
+      }
+      td[class="flexibleContainerCell"] {
+        max-width: 100%;
+        padding: 0 20px !important;
+      }
+      td[class="flexibleContainerBox"] {
+        display: table-cell;
+        width: 40%;
+        vertical-align: middle;
+      }
+      td[class="flexibleContainerBox"] table {
+        display: table;
+      }
       table[class="flexibleContainerBoxNext"] {
-        width: 80% !important;
-        padding-left: 20% !important;
         background: #ffffff !important;
+        max-width: 50%;
       }
       table {
         table-layout: auto !important;
@@ -437,18 +458,8 @@ Sizes: [
         background: #ffffff !important;
         background-image: none !important;
       }
-      h1 {
-        display: block !important;
-        width: 100% !important;
-        font-size: 37px !important;
-      }
-      a[class="menu-link"] {
-        display: block;
-        width: 100%;
-        text-align: center;
-      }
-      img[class="logo"] {
-        padding-left: 30px;
+      td[class="contentTablePadding"] {
+        height: 50px !important;
       }
     }
 
@@ -506,7 +517,7 @@ Sizes: [
           Its width can be set to 100% for a color band
           that spans the width of the page.
         -->
-        <table bgcolor="#f1f1f1" border="0" cellpadding="0" cellspacing="0" width="540" id="emailHeader" style="background: #f1f1f1;">
+        <table bgcolor="#f1f1f1" border="0" cellpadding="0" cellspacing="0" width="540" class="emailHeader" id="emailHeader" style="background: #f1f1f1;">
 
           <!-- HEADER ROW // -->
           <tr>
@@ -554,11 +565,12 @@ Sizes: [
                                       <div
                                           style="font-family:Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
                                         <!-- MENU start -->
-                                        <table align="center" width="100%" border="0" cellspacing="0"
+                                        <table class="menuTable" align="center" width="100%" border="0" cellspacing="0"
                                                cellpadding="0"
                                                style="border-spacing:0;font-family: Arial, sans-serif;color:#333333;">
                                           <tr>
                                             <td height="103"
+                                                colspan="2"
                                                 style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;"></td>
                                           </tr>
                                           <tr>
@@ -574,17 +586,21 @@ Sizes: [
                                             </td>
                                             <td align="right"
                                                 style="padding-top:-5px;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;">
-                                              <a href="http://www.eapteka.ru/goods/drugs/?utm_source=regular&utm_medium=email&utm_content=drugs&utm_campaign=2018_03_sixgoods"
+                                              <a class="menuLink"
+                                                 href="http://www.eapteka.ru/goods/drugs/?utm_source=regular&utm_medium=email&utm_content=drugs&utm_campaign=2018_03_sixgoods"
                                                  style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;" class="menu-link">Каталог
                                                 товаров</a>
-                                              <a href="http://www.eapteka.ru/company/stock/?utm_source=regular&utm_medium=email&utm_content=stock&utm_campaign=2018_03_sixgoods"
+                                              <a class="menuLink"
+                                                 href="http://www.eapteka.ru/company/stock/?utm_source=regular&utm_medium=email&utm_content=stock&utm_campaign=2018_03_sixgoods"
                                                  style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;" class="menu-link">Акции</a>
-                                              <a href="http://www.eapteka.ru/personal/profile/?utm_source=regular&utm_medium=email&utm_content=profile&utm_campaign=2018_03_sixgoods"
+                                              <a class="menuLink"
+                                                 href="http://www.eapteka.ru/personal/profile/?utm_source=regular&utm_medium=email&utm_content=profile&utm_campaign=2018_03_sixgoods"
                                                  style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;text-decoration: none;" class="menu-link">Веб-версия</a>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td height="20"
+                                                colspan="2"
                                                 style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;"></td>
                                           </tr>
                                         </table>
@@ -752,9 +768,9 @@ Sizes: [
                                         <!--LIST END-->
                                       </div>
                                       <div style="clear: both;">
-                                        <a href="https://www.eapteka.ru/"
+                                        <a href="https://www.eapteka.ru/buy/?id=296026"
                                            style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px; margin-bottom: 20px;font-size: 16px;">Купить
-                                          за 790 руб.</a>
+                                          за 790&nbsp;руб.</a>
                                       </div>
                                     </td>
                                   </tr>
@@ -766,7 +782,7 @@ Sizes: [
                                        width="232" style="max-width:100%;background: transparent;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <a href="https://eapteka.ru" style="display: block;" title="Dieta Perfetta">
+                                      <a href="https://www.eapteka.ru/buy/?id=296026" style="display: block;" title="Dieta Perfetta">
                                         <img
                                             src="https://237528.selcdn.ru/eapteka.ru/20180323/perfetta.png"
                                             width="232"
@@ -815,7 +831,7 @@ Sizes: [
                                 <table border="0" cellpadding="0" cellspacing="0" width="232" style="max-width:100%;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <a href="https://eapteka.ru" style="display: block;" title="Порциола">
+                                      <a href="https://www.eapteka.ru/buy/?id=250649" style="display: block;" title="Порциола">
                                         <img src="https://237528.selcdn.ru/eapteka.ru/20180323/porciolla.png"
                                              width="235"
                                              height="324"
@@ -867,9 +883,9 @@ Sizes: [
                                         <!--LIST END-->
                                       </div>
                                       <div style="clear: both;">
-                                        <a href="#https://www.eapteka.ru/"
+                                        <a href="https://www.eapteka.ru/buy/?id=250649"
                                            style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;font-size: 16px;">Купить
-                                          за 790 руб.</a>
+                                          за 790&nbsp;руб.</a>
                                       </div>
                                     </td>
                                   </tr>
@@ -945,9 +961,9 @@ Sizes: [
                                       </table>
                                       <!--LIST END-->
                                       <div style="clear: both;">
-                                        <a href="https://www.eapteka.ru/"
+                                        <a href="https://www.eapteka.ru/buy/?id=222523"
                                            style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;font-size: 16px;">Купить
-                                          за 790 руб.</a>
+                                          за 790&nbsp;руб.</a>
                                       </div>
                                     </td>
                                   </tr>
@@ -959,7 +975,7 @@ Sizes: [
                                        width="232" style="max-width:100%;background: transparent;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;">
-                                      <a href="https://eapteka.ru" style="display: block;" title="Редуксин Лайт">
+                                      <a href="https://www.eapteka.ru/buy/?id=222523" style="display: block;" title="Редуксин Лайт">
                                         <img src="https://237528.selcdn.ru/eapteka.ru/20180323/reduxin.png"
                                              width="239"
                                              height="290"
@@ -1007,7 +1023,7 @@ Sizes: [
                                 <table border="0" cellpadding="0" cellspacing="0" width="232" style="max-width:100%;">
                                   <tr>
                                     <td align="left" class="textContent" style="background: transparent;vertical-align: bottom;">
-                                      <a href="https://eapteka.ru" style="display: block;"  title="Modelform">
+                                      <a href="https://www.eapteka.ru/buy/?id=229912" style="display: block;"  title="Modelform">
                                         <img src="https://237528.selcdn.ru/eapteka.ru/20180323/modelform.png"
                                              width="245"
                                              height="312"
@@ -1060,9 +1076,9 @@ Sizes: [
                                         <!--LIST END-->
                                       </div>
                                       <div style="clear: both;margin-bottom: 30px;">
-                                        <a href="https://www.eapteka.ru/"
+                                        <a href="https://www.eapteka.ru/buy/?id=229912"
                                            style="text-decoration: none;color: #ffffff;background-color: #4ddbbc;padding: 8px 10px 7px;text-align: center;display: block;border-radius: 3px;font-size: 16px;">Купить
-                                          за 790 руб.</a></div>
+                                          за 790&nbsp;руб.</a></div>
                                     </td>
                                   </tr>
                                 </table>
@@ -1092,15 +1108,15 @@ Sizes: [
                 <tr>
                   <td align="center" valign="top" style="background: transparent;">
                     <!-- FLEXIBLE CONTAINER // -->
-                    <table border="0" cellpadding="30" cellspacing="0" width="540" class="" style="background: transparent;">
+                    <table border="0" cellpadding="30" cellspacing="0" width="100%" class="" style="background: transparent;">
                       <tr>
-                        <td align="center" valign="top" width="540" style="padding-left: 0; padding-right: 0; padding-bottom: 0;background: transparent;"
+                        <td align="center" valign="top" width="540" style="padding-bottom: 0;background: transparent;"
                             class="flexibleContainerCell">
 
                           <!-- CONTENT TABLE // -->
                           <table align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;color:#333333;" >
                             <tr>
-                              <td colspan="2" style="padding: 0 30px; background: transparent;">
+                              <td colspan="2" style="padding: 0; background: transparent;">
                                 <a href="https://www.eapteka.ru/"
                                    style="display: block;text-decoration: none;color: #4ddbbc;
                                    padding: 8px 10px 7px;text-align: center;
@@ -1108,13 +1124,13 @@ Sizes: [
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-size:20px;line-height:22px;color:#4A4A4A;padding-top:38px;padding-bottom:9px;padding-right:30px;padding-left:30px;background: transparent;border: 0 !important;" colspan="2">Помощь по заказу</td>
+                              <td style="font-size:20px;line-height:22px;color:#4A4A4A;padding-top:38px;padding-bottom:9px;background: transparent;border: 0 !important;" colspan="2">Помощь по заказу</td>
                             </tr>
                             <tr>
-                              <td style="font-size:15px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:17px;padding-right:30px;padding-left:30px;background: transparent;" colspan="2">Свяжитесь с нашей круглосуточной службой поддержки <br />любым удобным для вас способом:</td>
+                              <td style="font-size:15px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:17px;background: transparent;" colspan="2">Свяжитесь с нашей круглосуточной службой поддержки <br />любым удобным для вас способом:</td>
                             </tr>
                             <tr>
-                              <td style="font-size:13px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:21px;padding-right:30px;padding-left:30px;background: transparent;" colspan="2">
+                              <td style="font-size:13px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:21px;background: transparent;" colspan="2">
                                 <ul style="list-style: none;margin: 0;padding: 0;">
                                   <li color="#6a6a6a" style="margin-bottom: 6px; color: #6a6a6a;"><span style="padding: 0 10px 0 0;display: inline-block;vertical-align: middle;"><span style="display:block;background-color: #4ddbbc;width:5px;height:5px;border-radius:5px;"></span></span>по телефону <a href="tel:+7 495 730-53-00" style="text-decoration: none;color: #4ddbbc;">+7 495 730-53-00</a></li>
                                   <li color="#6a6a6a" style="margin-bottom: 6px; color: #6a6a6a;"><span style="padding: 0 10px 0 0;display: inline-block;vertical-align: middle;"><span style="display:block;background-color: #4ddbbc;width:5px;height:5px;border-radius:5px;"></span></span>по почте <a href="mailto:info@eapteka.ru" style="text-decoration: none;color: #4ddbbc;">info@eapteka.ru</a></li>
@@ -1122,14 +1138,14 @@ Sizes: [
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-size:14px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:39px;padding-right:30px;padding-left:30px;background:transparent;" colspan="2">
+                              <td style="font-size:14px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:39px;background:transparent;" colspan="2">
                                 <a href="https://www.facebook.com/pages/Eaptekaru/111162745615533" style="padding-right:12px;display: inline-block;" ><img createnew="true"  src="http://www.eapteka.ru/images/mail/sixgoods/F.png" width="31" height="30" alt="" style="border-width:0;" /></a>
                                 <a href="https://vk.com/doctoreapetkin" style="padding-right:12px;display: inline-block;" ><img createnew="true"  src="http://www.eapteka.ru/images/mail/sixgoods/vk.png" width="31" height="30" alt="" style="border-width:0;" /></a>
                               </td>
                             </tr>
                             <tr>
-                              <td style="font-size:13px;line-height:22px;color:#AAAAAA;padding-top:0;padding-bottom:27px;padding-right:30px;padding-left:30px;background: transparent;" width="50%">&copy; EAPTEKA.RU, 2018</td>
-                              <td style="font-size:13px;line-height:22px;color:#AAAAAA;padding-top:0;padding-bottom:27px;padding-right:30px;padding-left:30px;background: transparent;" align="right" width="50%"><a href="[[remove]]" title="Отписаться" target="_blank" style="color: #AAAAAA;text-decoration: none;">Отписаться от рассылки</a>
+                              <td style="font-size:13px;line-height:22px;color:#AAAAAA;padding-top:0;padding-bottom:27px;background: transparent;" width="50%">&copy; EAPTEKA.RU, 2018</td>
+                              <td style="font-size:13px;line-height:22px;color:#AAAAAA;padding-top:0;padding-bottom:27px;background: transparent;" align="right" width="50%"><a href="[[remove]]" title="Отписаться" target="_blank" style="color: #AAAAAA;text-decoration: none;">Отписаться от рассылки</a>
                             </tr>
                           </table>
                         </td>
@@ -1149,7 +1165,7 @@ Sizes: [
       </td>
     </tr>
     <tr>
-      <td height="131" style="background: transparent;"></td>
+      <td class="contentTablePadding" height="131" style="background: transparent;"></td>
     </tr>
     <!-- // MODULE ROW -->
 
