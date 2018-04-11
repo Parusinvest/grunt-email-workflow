@@ -1,7 +1,6 @@
----
-layout: default.hbs
-subject: Simple Transactional Email
----
+{% extends "layouts/default.twig" %}
+{% block title %}It is awesome title{% endblock %}
+{% block content %}
 <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
 <table class="main">
   <tr>
@@ -38,11 +37,17 @@ subject: Simple Transactional Email
 
             -->
 
-            {{> button type='primary' align='center' url='https://github.com/leemunroe/grunt-email-workflow' title='View the source on GitHub' }}
-            
+            {% set type='primary' %}
+            {% set align='center' %}
+            {% set url='https://github.com/leemunroe/grunt-email-workflow' %}
+            {% set title='View the source on GitHub' %}
+            {% include "partials/components/_button.twig" %}
+
             <p>Feel free to use, copy, modify this email template as you wish.</p>
             <p>Thanks, have a lovely day.</p>
-            <p>{{> follow_lee }}</p>
+            <p>
+              {% include "partials/_follow_lee.twig" %}
+            </p>
           </td>
         </tr>
       </table>
@@ -58,3 +63,4 @@ subject: Simple Transactional Email
     </tr>
   </table>
 </div>
+{% endblock %}

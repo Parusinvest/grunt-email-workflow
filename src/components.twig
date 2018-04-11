@@ -1,0 +1,117 @@
+{% extends "layouts/default.twig" %}
+{% block title %}It is awesome title{% endblock %}
+{% block content %}
+<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <h1 class="align-center">Component Guide</h1>
+            <p>Hi there,</p>
+            <p>
+              Here"s a quick guide to some of the built in components.<br />
+              Each component has it"s own <code>partials/components/&lt;component_name&gt;.twig</code> file and a corresponding <code>_&lt;component_name&gt;.scss</code>
+            </p>
+
+              {% include "partials/components/_divider.twig" %}
+
+
+            <!-- BEGIN DIVIDERS -->
+            <h2>Dividers</h2>
+            <p>
+                <code>&#123;% include "partials/components/_divider.twig" %&#125;</code>
+            </p>
+              {% include "partials/components/_divider.twig" %}
+
+            <!-- BEGIN NOTICES -->
+            <h2>Notices</h2>
+            <p>
+                <code>
+                    &#123;% set type="primary" %&#125;<br>
+                    &#123;% set url="https://github.com/leemunroe/grunt-email-workflow" %&#125;<br>
+&#123;% set title="Button (primary)" %&#125;<br>
+&#123;% include "partials/components/_button.twig" %&#125;<br>
+                </code>
+            </p>
+            {% set type="info" %}
+            {% set text="Hello, this is a <strong>info</strong> notice." %}
+            {% include "partials/components/_notice.twig" %}
+
+            {% set type="success" %}
+            {% set text="Hello, this is a <strong>success</strong> notice." %}
+            {% include "partials/components/_notice.twig" %}
+
+            {% set type="warning" %}
+            {% set text="Hello, this is a <strong>warning</strong> notice." %}
+            {% include "partials/components/_notice.twig" %}
+
+            {% set type="danger" %}
+            {% set text="Hello, this is a <strong>danger</strong> notice." %}
+            {% include "partials/components/_notice.twig" %}
+
+            {% include "partials/components/_divider.twig" %}
+
+            <!-- BEGIN BUTTONS -->
+            <h2>Buttons</h2>
+            <p>
+                <code>
+&#123;% set type="primary" %&#125;<br>
+&#123;% set url="https://github.com/leemunroe/grunt-email-workflow" %&#125;<br>
+&#123;% set title="Button (primary)" %&#125;<br>
+&#123;% include "partials/components/_button.twig" %&#125;<br>
+               </code>
+            </p>
+            {% set type="primary" %}
+            {% set url="https://github.com/leemunroe/grunt-email-workflow" %}
+            {% set title="Button (primary)" %}
+            {% include "partials/components/_button.twig" %}
+
+            {% set type="secondary" %}
+            {% set url="https://github.com/leemunroe/grunt-email-workflow" %}
+            {% set title="Button (secondary)" %}
+            {% include "partials/components/_button.twig" %}
+
+            {% include "partials/components/_divider.twig" %}
+
+            <!-- BEGIN CHARTS -->
+            <h2>Charts (<a href="https://image-charts.com/documentation">documentation</a>)</h2>
+            <p>
+              <code>
+&#123;% set width="534" %&#125;<br>
+&#123;% set height="200" %&#125;<br>
+&#123;% set params="cht=lc&chd=s:cEAELFJHHHKUju9uuXUc&chco=76A4FB&chls=2.0,0.0,0.0&chxt=x,y&chxl=0:|0|1|2|3|4|5|1:|0|50|100&chg=20,50" %&#125;<br>
+&#123;% set alt="beautiful chart" %&#125;<br>
+&#123;% include "partials/components/_chart.twig" %&#125;<br>
+              </code>
+            </p>
+            {% set width="534" %}
+            {% set height="200" %}
+            {% set params="cht=lc&chd=s:cEAELFJHHHKUju9uuXUc&chco=76A4FB&chls=2.0,0.0,0.0&chxt=x,y&chxl=0:|0|1|2|3|4|5|1:|0|50|100&chg=20,50" %}
+            {% set alt="beautiful chart" %}
+            {% include "partials/components/_chart.twig" %}
+
+            {% include "partials/components/_divider.twig" %}
+
+            <p>Feel free to use, copy, modify this email template as you wish.</p>
+            <p>Thanks, have a lovely day.</p>
+            <p>
+              {% include "partials/_follow_lee.twig" %}
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>Don"t like these annoying emails? <a href="{{ default.unsubscribe_url }}"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+{% endblock %}

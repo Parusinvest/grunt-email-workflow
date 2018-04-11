@@ -3,7 +3,7 @@
 default:
   - 'clean'
   - 'sass:dist'
-  - 'assemble'
+  - 'twigRender'
   - 'juice'
   - 'imagemin'
   - 'replace:src_images'
