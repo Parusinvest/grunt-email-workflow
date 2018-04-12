@@ -2,8 +2,8 @@
 # $ grunt
 default:
   - 'clean'
-  - 'sass:dist'
   - 'twigRender'
+  - 'sass:dist'
   - 'juice'
   - 'imagemin'
   - 'replace:src_images'

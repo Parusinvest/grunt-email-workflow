@@ -1,5 +1,7 @@
 module.exports = function (grunt) {
 
+  var css = grunt.file.read('src/css/main.css');
+
   require('load-grunt-config')(grunt, {
 
     // Pass data to tasks
@@ -13,6 +15,8 @@ module.exports = function (grunt) {
         dist_img: 'dist/img',
         preview : 'preview'
       },
+
+      extraCss: css,
 
       // secrets.json is ignored in git because it contains sensitive data
       // See the README for configuration settings

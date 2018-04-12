@@ -7,7 +7,9 @@ module.exports = {
       applyWidthAttributes: true,
       preserveImportant: true,
       preserveFontFaces: true,
+      extraCss: '<%= extraCss %>',
       webResources: {
+        relativeTo: 'dist/',
         images: false
       }
     },
@@ -15,6 +17,11 @@ module.exports = {
       expand: true,
       src: ['<%= paths.dist %>/*.html'],
       dest: ''
+    }, {
+      expand: true,
+      cwd   : '<%= paths.src %>/',
+      src: ['*.twig', 'layouts/*.twig', 'partials/**/*.twig'],
+      dest: '<%= paths.dist %>/twig/'
     }]
   }
 };
