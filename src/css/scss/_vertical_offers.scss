@@ -1,0 +1,47 @@
+.verOffers {
+  width: 100%;
+  td {
+    width: 32%;
+    padding: 0 2%;
+  }
+  &__img {
+    text-align: center;
+    a {
+      display: block;
+      padding-bottom: 27px;
+    }
+  }
+  &__title {
+    text-align: left;
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    &:hover {
+      color: #4ddbbc;
+    }
+  }
+  &__provider {
+    text-align: left;
+    color: #999999;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 23px;
+  }
+  &__price {
+    text-align: left;
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 16px;
+    & > b {
+      font-weight: 600;
+    }
+  }
+  &__btn {
+  }
+}

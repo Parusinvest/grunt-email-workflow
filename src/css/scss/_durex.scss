@@ -1,0 +1,111 @@
+@import 'vertical_offers';
+
+.background {
+  padding: 31px 5% 0;
+  background: url("https://237528.selcdn.ru/eapteka.ru/20180424/shutterstock-648620224.png") 0 100% no-repeat;
+  background-size: 100%;
+}
+
+.bigBanner {
+  width: 100%;
+  &__title {
+    color: #5C5C5C !important;
+    font-family: Arial;
+    font-size: 48.2px;
+    line-height: 52px;
+  }
+  &__subtitle {
+    display: inline-block;
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 31px;
+  }
+  &__promo {
+    margin-bottom: 23px;
+  }
+  &__tagline {
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 37px;
+  }
+  &__btn {
+    width: 227px;
+    font-weight: 600;
+  }
+  &__oldPrice {
+    color: #999999;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__img {
+    width: 45%;
+    padding: 0 0 40px;
+    text-align: right;
+    & > a {
+      display: inline-block;
+      position: relative;
+      img {
+        width: 159px;
+        height: 252px;
+      }
+    }
+  }
+  &__sale {
+	height: 62px;
+	width: 62px;
+	background-color: #DB1350;
+	box-shadow: 6px 8px 5px 0 rgba(136,181,194,0.31);
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: Arial, "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+    font-size: 25px;
+    line-height: 2.35;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+  }
+  &__info {
+    padding: 0 0 31px;
+  }
+}
+
+.promo {
+  width: 231px;
+  border: 1px solid #4A4A4A;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px 0;
+  &__code {
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+  }
+  &__validity {
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.durexOffers {
+  padding: 20px;
+  h2 {
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 39px;
+  }
+  &__offer {
+    margin-bottom: 23px;
+  }
+}

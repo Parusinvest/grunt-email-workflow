@@ -1,7 +1,6 @@
 // Main scss styles
 @import 'config';
 @import 'global';
-@import 'layout';
 @import 'type';
 @import 'buttons';
 @import 'notices';
@@ -9,3 +8,27 @@
 @import 'other';
 @import 'responsive';
 @import 'test';
+@import 'layout';
+@import 'footer';
+@import 'durex';
+
+.menuTable {
+  background: #f1f1f1;
+}
+
+.buy {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4ddbbc;
+  padding: 8px 10px 7px;
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.bottom-padding {
+  height: 127px;
+  background: #f1f1f1;
+}

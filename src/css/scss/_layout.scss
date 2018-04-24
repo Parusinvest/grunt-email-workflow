@@ -50,6 +50,12 @@ body{
   padding: 0 0 $padding;
 }
 
+.inner-wrapper {
+  width: 540px !important;
+  background: #ffffff;
+  max-width: 100%;
+}
+
 .header {
   margin-bottom: $padding;
   margin-top: ($padding - 10);

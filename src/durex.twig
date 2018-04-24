@@ -1,0 +1,67 @@
+{% extends "layouts/eapteka.twig" %}
+{% block title %}It is awesome title{% endblock %}
+{% set allOffersLink = "https://www.eapteka.ru/goods/manufacturer/dyureks/" %}
+{% block allOffersBtn %}Посмотреть все товары Durex'а{% endblock %}
+{% block content %}
+    <span class="preheader">Durex Invisible 54 шт. Промокод на скидку 15 %</span>
+    <table>
+        <tr>
+            <td class="background">
+                <h1 class="bigBanner__title">Durex Invisible 54 шт</h1>
+                <span class="bigBanner__subtitle">Промокод на скидку 15 %</span>
+                <table class="bigBanner">
+                    <tr>
+                        <td class="bigBanner__info">
+
+                            <div class="bigBanner__promo promo">
+                                <div class="promo__code">DUREX54</div>
+                                <div class="promo__validity">активен до 31 мая</div>
+                            </div>
+                            <div class="bigBanner__tagline">Еще больше удовольствия<br>по суперцене!</div>
+                            <a class="buy bigBanner__btn" href="https://www.eapteka.ru/buy/?id=290678"><b>Купить за 2363
+                                    руб.</b></a>
+                            <div class="bigBanner__oldPrice">Цена без промокода 2780 руб.</div>
+                        </td>
+                        <td class="bigBanner__img">
+
+                            <a href="https://www.eapteka.ru/buy/?id=290678">
+                                <img src="https://237528.selcdn.ru/eapteka.ru/20180424/rb-durex-invisible-18pk-carton-rb261782-3046743-front--1-.png"
+                                     alt="">
+                                                                        <div class="bigBanner__sale">15%</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="durexOffers">
+                <h2>Oбратите внимание:</h2>
+                <table>
+                    <tr>
+                        <td class="durexOffers__offer">
+                            {% set offerName1 = "Презервативы Durex Invisible, 12 шт. +<br> Гель-смазка Durex Naturals, 100 мл " %}
+                            {% set offerImg1 = "https://237528.selcdn.ru/eapteka.ru/20180424/gggg.png" %}
+                            {% set offerProvider1 = "Великобритания" %}
+                            {% set offerLink1 = "https://www.eapteka.ru/buy/?id=296105" %}
+                            {% set offerPrice1 = "1150" %}
+                            {% set offerName2 = "Презервативы
+Durex XXL,
+12 шт." %}
+                            {% set offerImg2 = "https://237528.selcdn.ru/eapteka.ru/20180424/789789789.png" %}
+                            {% set offerProvider2 = "Великобритания" %}
+                            {% set offerLink2 = "https://www.eapteka.ru/buy/?id=205084" %}
+                            {% set offerPrice2 = "485" %}
+                            {% set offerName3 = "Презервативы Durex Intense Orgasmic с ребристой и точечной структурой, 12 шт." %}
+                            {% set offerImg3 = "https://237528.selcdn.ru/eapteka.ru/20180424/di.png" %}
+                            {% set offerProvider3 = "Великобритания" %}
+                            {% set offerLink3 = "https://www.eapteka.ru/buy/?id=290662" %}
+                            {% set offerPrice3 = "201" %}
+                            {% include "partials/components/_vertical_offer.twig" %}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
