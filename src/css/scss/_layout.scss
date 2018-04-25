@@ -51,9 +51,18 @@ body{
 }
 
 .inner-wrapper {
-  width: 540px !important;
+  width: 540px;
   background: #ffffff;
   max-width: 100%;
+  @media screen and (max-width: 320px) {
+    width: 100% !important;
+  }
+}
+
+table[class=inner-wrapper] {
+ @media screen and (max-width: 320px) {
+    width: 320px !important;
+  }
 }
 
 .header {

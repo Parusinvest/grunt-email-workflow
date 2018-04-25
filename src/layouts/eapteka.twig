@@ -4,22 +4,20 @@
     {% block head %}
         <meta name="viewport" content="width=device-width"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css"/>
         <title>{% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
 <body>
 <div id="content">
     <center style="background-color:#f1f1f1;">
-        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable"
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable"
                style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;background: transparent;">
             <tr>
                 <td align="center" valign="top" style="background: transparent;">
 
-                    <table class="inner-wrapper" width="540" border="0" cellpadding="0" cellspacing="0">
+                    <table class="inner-wrapper" border="0" cellpadding="0" cellspacing="0">
                         <tr>
                             <td class="menuTable">
-
 
                                 {#MENU START#}
                                 <table align="center" width="100%" border="0" cellspacing="0"
@@ -28,10 +26,10 @@
                                     <tr>
                                         <td height="103"
                                             colspan="2"
-                                            style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;"></td>
+                                            style="padding: 0;background: transparent;"></td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-top:0;padding-bottom:5px;padding-right:0;padding-left:0;background: transparent;">
+                                        <td style="padding: 0 0 5px;background: transparent;">
                                             <a href="http://www.eapteka.ru/?utm_source=regular&utm_medium=email&utm_content=logo&utm_campaign=2018_03_sixgoods"><img
                                                         createnew="true"
                                                         src="http://www.eapteka.ru/images/mail/sixgoods/logo.png"
@@ -42,40 +40,36 @@
                                                         class="logo"/></a>
                                         </td>
                                         <td align="right"
-                                            style="padding-top:-5px;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;vertical-align: middle;">
-                                            <a class="menuLink"
+                                            style="padding: -5px 0 0;background: transparent;vertical-align: middle;">
+                                            <a class="menuLink menu-link"
                                                href="http://www.eapteka.ru/goods/drugs/?utm_source=regular&utm_medium=email&utm_content=drugs&utm_campaign=2018_03_sixgoods"
-                                               style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;"
-                                               class="menu-link">Каталог
+                                               style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;">Каталог
                                                 товаров</a>
-                                            <a class="menuLink"
+                                            <a class="menuLink menu-link"
                                                href="http://www.eapteka.ru/company/stock/?utm_source=regular&utm_medium=email&utm_content=stock&utm_campaign=2018_03_sixgoods"
-                                               style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;text-decoration: none;"
-                                               class="menu-link">Акции</a>
-                                            <a class="menuLink"
+                                               style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;margin-right: 15px;">Акции</a>
+                                            <a class="menuLink menu-link"
                                                href="http://www.eapteka.ru/personal/profile/?utm_source=regular&utm_medium=email&utm_content=profile&utm_campaign=2018_03_sixgoods"
-                                               style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;text-decoration: none;"
-                                               class="menu-link">Веб-версия</a>
+                                               style="display: inline-block;text-decoration: none;color: #4ddbbc;font-size: 14px;line-height: 15px;padding-left: 0;padding-bottom:0;">Веб-версия</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td height="20"
                                             colspan="2"
-                                            style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background: transparent;"></td>
+                                            style="padding: 0;background: transparent;"></td>
                                     </tr>
                                 </table>
                                 {#MENU END#}
+
                             </td>
                         </tr>
                         <tr>
                             <td>
-
                                 {% block content %}{% endblock %}
                             </td>
                         </tr>
                         <tr>
                             <td class="footer">
-
 
                                 {#FOOTER START#}
                                 <table align="left" width="100%" border="0" cellspacing="0" cellpadding="0"
@@ -95,27 +89,24 @@
                                     </tr>
                                     <tr>
                                         <td style="font-size:15px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:17px;background: transparent;"
-                                            colspan="2">Свяжитесь с нашей круглосуточной службой поддержки <br/>любым
-                                            удобным для вас способом:
+                                            colspan="2">Свяжитесь с нашей круглосуточной службой поддержки <br/>любым удобным для вас способом:
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="font-size:13px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:21px;background: transparent;"
                                             colspan="2">
-                                            <ul style="list-style: none !important;margin: 0 !important;padding: 0 !important;">
-                                                <li color="#6a6a6a" style="margin-bottom: 6px; color: #6a6a6a;"><span
-                                                            style="padding: 0 10px 0 0;display: inline-block;vertical-align: middle;"><span
-                                                                style="display:block;background-color: #4ddbbc;width:5px;height:5px;border-radius:5px;"></span></span>по
-                                                    телефону <a href="tel:+7 495 730-53-00"
-                                                                style="text-decoration: none;color: #4ddbbc;">+7 495
-                                                        730-53-00</a></li>
-                                                <li color="#6a6a6a" style="margin-bottom: 6px; color: #6a6a6a;"><span
-                                                            style="padding: 0 10px 0 0;display: inline-block;vertical-align: middle;"><span
-                                                                style="display:block;background-color: #4ddbbc;width:5px;height:5px;border-radius:5px;"></span></span>по
-                                                    почте <a href="mailto:info@eapteka.ru"
-                                                             style="text-decoration: none;color: #4ddbbc;">info@eapteka.ru</a>
-                                                </li>
-                                            </ul>
+                                            <div color="#6a6a6a" style="margin-bottom: 6px; color: #6a6a6a;"><span
+                                                        style="padding: 0 10px 0 0;display: inline-block;vertical-align: middle;"><span
+                                                            style="display:block;background-color: #4ddbbc;width:5px;height:5px;border-radius:5px;"></span></span>по
+                                                телефону <a href="tel:+7 495 730-53-00"
+                                                            style="text-decoration: none;color: #4ddbbc;">+7 495
+                                                    730-53-00</a></div>
+                                            <div color="#6a6a6a" style="margin-bottom: 6px; color: #6a6a6a;"><span
+                                                        style="padding: 0 10px 0 0;display: inline-block;vertical-align: middle;"><span
+                                                            style="display:block;background-color: #4ddbbc;width:5px;height:5px;border-radius:5px;"></span></span>по
+                                                почте <a href="mailto:info@eapteka.ru"
+                                                         style="text-decoration: none;color: #4ddbbc;">info@eapteka.ru</a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -139,14 +130,13 @@
                                             width="50%">&copy; EAPTEKA.RU, 2018
                                         </td>
                                         <td style="font-size:13px;line-height:22px;color:#AAAAAA;padding-top:0;padding-bottom:27px;background: transparent;"
-                                            align="right" width="50%"><a href="[[remove]]" title="Отписаться"
-                                                                         target="_blank"
-                                                                         style="color: #AAAAAA;text-decoration: none;">Отписаться
-                                                от рассылки</a>
+                                            align="right" width="50%">
+                                            <a href="[[remove]]" title="Отписаться" target="_blank"
+                                               style="color: #AAAAAA;text-decoration: none;">Отписаться от рассылки</a>
+                                        </td>
                                     </tr>
                                 </table>
                                 {#FOOTER END#}
-
 
                             </td>
                         </tr>
@@ -158,10 +148,8 @@
                 </td>
             </tr>
         </table>
-
     </center>
 </div>
-
 
 </body>
 </html>

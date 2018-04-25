@@ -3,31 +3,44 @@
 .background {
   padding: 31px 5% 0;
   background: url("https://237528.selcdn.ru/eapteka.ru/20180424/shutterstock-648620224.png") 0 100% no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .bigBanner {
   width: 100%;
+  td {
+    @media screen and (max-width: 320px) {
+      display: inline-block !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+  }
   &__title {
     color: #5C5C5C !important;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 48.2px;
     line-height: 52px;
+    @media screen and (max-width: 320px) {
+      font-size: 30px !important;
+    }
   }
   &__subtitle {
     display: inline-block;
     color: #4A4A4A;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 31px;
   }
   &__promo {
     margin-bottom: 23px;
+    @media screen and (max-width: 320px) {
+      margin: 0 auto 23px !important;
+    }
   }
   &__tagline {
     color: #4A4A4A;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 37px;
@@ -35,10 +48,13 @@
   &__btn {
     width: 227px;
     font-weight: 600;
+    @media screen and (max-width: 320px) {
+      margin: 0 auto 20px !important;
+    }
   }
   &__oldPrice {
     color: #999999;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 14px;
     line-height: 16px;
   }
@@ -46,29 +62,21 @@
     width: 45%;
     padding: 0 0 40px;
     text-align: right;
+    @media screen and (max-width: 320px) {
+      width: 100% !important;
+      text-align: center !important;
+    }
     & > a {
       display: inline-block;
       position: relative;
       img {
-        width: 159px;
-        height: 252px;
+        width: 181px;
+        height: 264px;
+        @media screen and (max-width: 320px) {
+          padding-right: 20px !important;
+        }
       }
     }
-  }
-  &__sale {
-	height: 62px;
-	width: 62px;
-	background-color: #DB1350;
-	box-shadow: 6px 8px 5px 0 rgba(136,181,194,0.31);
-    border-radius: 50%;
-    color: #ffffff;
-    font-family: Arial, "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-    font-size: 25px;
-    line-height: 2.35;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: -10px;
   }
   &__info {
     padding: 0 0 31px;
@@ -83,14 +91,14 @@
   padding: 10px 0;
   &__code {
     color: #4A4A4A;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 30px;
     letter-spacing: 2px;
     line-height: 30px;
   }
   &__validity {
     color: #4A4A4A;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 12px;
     line-height: 14px;
   }
@@ -100,7 +108,7 @@
   padding: 20px;
   h2 {
     color: #4A4A4A;
-    font-family: Arial;
+    font-family: Arial, Helvetica, serif;
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 39px;
