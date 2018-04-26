@@ -9,7 +9,7 @@
 .bigBanner {
   width: 100%;
   td {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 374px) {
       display: inline-block !important;
       width: 100% !important;
       text-align: center !important;
@@ -20,7 +20,7 @@
     font-family: Arial, Helvetica, serif;
     font-size: 48.2px;
     line-height: 52px;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 374px) {
       font-size: 30px !important;
     }
   }
@@ -34,7 +34,7 @@
   }
   &__promo {
     margin-bottom: 23px;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 374px) {
       margin: 0 auto 23px !important;
     }
   }
@@ -48,7 +48,7 @@
   &__btn {
     width: 227px;
     font-weight: 600;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 374px) {
       margin: 0 auto 20px !important;
     }
   }
@@ -57,22 +57,24 @@
     font-family: Arial, Helvetica, serif;
     font-size: 14px;
     line-height: 16px;
+    margin-bottom: 20px;
   }
   &__img {
     width: 45%;
     padding: 0 0 40px;
     text-align: right;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 374px) {
       width: 100% !important;
       text-align: center !important;
     }
     & > a {
       display: inline-block;
       position: relative;
+      text-align: right;
       img {
         width: 181px;
         height: 264px;
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 374px) {
           padding-right: 20px !important;
         }
       }

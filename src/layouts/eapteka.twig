@@ -2,9 +2,12 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     {% block head %}
-        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="format-detection" content="telephone=no"/> <!-- disable auto telephone linking in iOS -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>{% block title %}{% endblock %}</title>
+        {% include "../partials/components/_media.twig" %}
     {% endblock %}
 </head>
 <body>
@@ -89,7 +92,8 @@
                                     </tr>
                                     <tr>
                                         <td style="font-size:15px;line-height:20px;color:#4A4A4A;padding-top:0;padding-bottom:17px;background: transparent;"
-                                            colspan="2">Свяжитесь с нашей круглосуточной службой поддержки <br/>любым удобным для вас способом:
+                                            colspan="2">Свяжитесь с нашей круглосуточной службой поддержки <br/>любым
+                                            удобным для вас способом:
                                         </td>
                                     </tr>
                                     <tr>

@@ -1,0 +1,96 @@
+<style type="text/css">
+    /*  CONDITIONS FOR ANDROID DEVICES ONLY
+       *   http://developer.android.com/guide/webapps/targeting.html
+       *   http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
+       =====================================================*/
+    @media only screen and (-webkit-device-pixel-ratio: .75) {
+        /* Put CSS for low density (ldpi) Android layouts in here */
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio: 1) {
+        /* Put CSS for medium density (mdpi) Android layouts in here */
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio: 1.5) {
+        /* Put CSS for high density (hdpi) Android layouts in here */
+    }
+
+    /* end Android targeting */
+    /* CONDITIONS FOR IOS DEVICES ONLY
+    =====================================================*/
+    @media only screen and (min-device-width: 320px) and  (max-width: 374px) {
+        .menuTable {
+            padding: 0 5px !important;
+        }
+        .menuLink {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        table[class=inner-wrapper] {
+            width: auto !important;
+        }
+
+        .bigBanner__info {
+            display: block !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            text-align: center !important;
+        }
+
+        .bigBanner__title {
+            font-size: 30px !important;
+        }
+
+        .bigBanner__promo {
+            margin: 0 auto 23px !important;
+            font-size: 20px !important;
+        }
+
+        .bigBanner__btn {
+            margin: 0 auto 20px !important;
+        }
+
+        .bigBanner__img {
+            display: block;
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+        .bigBanner__img a {
+            text-align: center !important;
+            max-width: 100% !important;
+        }
+
+        .bigBanner__img a img {
+            max-width: 100% !important;
+            margin-right: 20px !important;
+        }
+    }
+
+    @media screen and (max-device-width: 540px) {
+        .menuTable {
+            padding: 0 5px !important;
+        }
+        .menuLink {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        table[class=inner-wrapper] {
+            width: auto !important;
+        }
+
+        .bigBanner__promo {
+            max-width: 170px !important;
+        }
+
+        .bigBanner__btn {
+            max-width: 170px !important;
+        }
+
+        .bigBanner__img a img {
+            height: auto !important;
+        }
+    }
+</style>
